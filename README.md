@@ -24,3 +24,6 @@ Or
 main.exe
 ```
 
+
+Simplified flowchart RPSSL (without game-round, as instructed):
+![RPSSL](https://i.imgur.com/sND8FdS.png)
