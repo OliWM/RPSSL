@@ -6,6 +6,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <unistd.h>
+#include <stdbool.h>
 
 const char *SHAPE_STRINGS[] = {"🖖", "✂️", "️🗒️", "🪨", "🦎"};
 int playerScore;
@@ -62,12 +63,12 @@ int main() {
             printf("👫:🤖 %d:%d\n\n", playerScore, computerScore);
           } else {
             puts("Sorry, something went wrong.");
-          }
+          } // end of game if-statement.
         } else if (choiceAsInt == 9) {
-          puts("Thank you for playing.");
+          puts("Thank you for playing."); // 9 means they wanted to exit
         } else {
           printf("You entered: %sThat is not a valid input.", playerChoice);
-        }
+        } // they entered something that was not offered in the menu
       }
       if (playerScore == 5) {
         puts("Congratulations, player won! 🥳");
